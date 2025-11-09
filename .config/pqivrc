@@ -1,0 +1,5 @@
+[options]
+sort=1
+
+[keybindings]
+w { command( swww img $1) }
