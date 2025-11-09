@@ -136,7 +136,7 @@ overview {
       window-rule {
         match app-id="tauonmb"
         open-maximized true
-        open-on-workspace "3"
+        open-on-workspace "4"
       }
 
 	hotkey-overlay {
