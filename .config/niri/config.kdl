@@ -56,9 +56,10 @@ overview {
       }
 
 
-        workspace "1"
-        workspace "2"
+        workspace "4"
         workspace "3"
+        workspace "2"
+        workspace "1"
 
       /-output "eDP-1" {
           mode "1920x1080@120.030"
