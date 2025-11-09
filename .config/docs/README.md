@@ -3,11 +3,6 @@ Perfect 👍 — here’s the full **`README.md`** written entirely in Markdown 
 ---
 
 ````markdown
-# 🏠 Dotfiles Managed with a Bare Git Repository
-
-This repository contains my personal dotfiles — configuration files for my shell, editor, terminal, and various tools — managed through a **bare Git repository** located in `~/.cfg`.
-
-This setup keeps your `$HOME` directory clean while allowing full Git version control for your configuration files.
 
 ---
 
@@ -70,7 +65,7 @@ config config --local status.showUntrackedFiles no
 
 ---
 
-### 3. Done 🎉
+### 3. Done 
 
 Your configuration files are now in place and managed with Git.
 
@@ -85,7 +80,7 @@ config push
 
 ---
 
-## 💡 Tips
+##  Tips
 
 * **Add new dotfiles:**
 
@@ -109,7 +104,7 @@ config push
 
 ---
 
-## 🧰 Optional Short Alias
+##  Optional Short Alias
 
 Add this helper to your shell for convenience:
 
@@ -127,7 +122,7 @@ cf push
 
 ---
 
-## 🧩 Example Repository Structure
+##  Example Repository Structure
 
 ```
 ~/.config/
@@ -157,16 +152,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 ---
 
-## 🧑‍💻 Credit
-
 Inspired by [Atlassian’s “Manage your dotfiles with Git” guide](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ---
 
-```
-
----
-
-Would you like me to include an extra **setup script** (`setup.sh`) that automates these steps on a new system (clone, alias, checkout, etc.)?
 ```
 
