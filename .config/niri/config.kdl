@@ -154,7 +154,6 @@ overview {
     	 Mod+A { spawn "fuzzel"; }
     	 Mod+S { spawn "tauon"; }
     	 Mod+D { spawn "legcord"; }
-          Super+Alt+L { spawn "swaylock"; }
 
           XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
           XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
