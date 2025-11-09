@@ -5,7 +5,7 @@
     "spacing": 5,
 
     "modules-left": ["niri/workspaces"],
-    "modules-center": [],
+    "modules-center": ["mpris"],
     "modules-right": ["wireplumber", "group/bat", "group/net", "clock", "tray"],
 
     "group/usage": {
@@ -82,6 +82,18 @@
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-disconnected": "Disconnected",
     },
+
+    "mpris": {
+	"format": " {title} - {artist}",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "󰝚 ",
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	 "ignored-players": ["librewolf"]
+},
 
     "bluetooth": {
         "format": "\udb80\udcaf",
