@@ -1,4 +1,3 @@
-Perfect 👍 — here’s the full **`README.md`** written entirely in Markdown format, ready for you to drop into your dotfiles repo (e.g. `$HOME/.cfg` or the GitHub repo you push to).
 
 ---
 
@@ -155,6 +154,4 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 Inspired by [Atlassian’s “Manage your dotfiles with Git” guide](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ---
-
-```
 
