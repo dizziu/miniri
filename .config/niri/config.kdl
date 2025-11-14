@@ -56,10 +56,10 @@ overview {
       }
 
 
-        workspace "4"
-        workspace "3"
-        workspace "2"
         workspace "1"
+        workspace "2"
+        workspace "3"
+        workspace "4"
 
       /-output "eDP-1" {
           mode "1920x1080@120.030"
@@ -160,6 +160,7 @@ overview {
           XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
           XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
           XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+          XF86AudioPlay   allow-when-locked=true { spawn "playerctl" "play-pause"; }
 
           Mod+Q { close-window; }
 
@@ -270,6 +271,7 @@ overview {
            Mod+Shift+9 { move-window-to-workspace 9; }
 
            Mod+Tab { focus-workspace-previous; }
+           Mod+O { toggle-overview; }
 
           Mod+Comma  { consume-window-into-column; }
           Mod+Period { expel-window-from-column; }

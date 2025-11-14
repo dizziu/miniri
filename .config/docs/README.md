@@ -15,7 +15,14 @@ git clone --bare git@github.com:<your-username>/dotfiles.git $HOME/.cfg
 
 > Replace `<your-username>` with your GitHub username.
 
+
+Package required
+```bash
+yay -S niri fuzzel librewolf-bin foot swwww waybar nwg-look pavucontrol colloid-gtk-theme-git bibata-cursor-theme legcord thunar mako zsh zoxide exa starship ttf-hack ttf-jetbrains-mono ttf-ubuntu-mono-nerd ttf-hack-nerd ttf-jetbrains-mono-nerd ttf-ubuntu-font-family blueman mpv 
+```
+
 ---
+
 
 ### 1. Define the Alias
 
