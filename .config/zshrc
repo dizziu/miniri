@@ -1,0 +1,30 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/twist/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+
+alias ls='exa --icons'
+alias la='exa --icons -la'
+alias tree='exa --icons --tree'
+alias cat='bat --theme base16 --paging=never --style=plain'
+alias g='copier -c github_token 2>&1 > /dev/null && git'
+alias cd='z'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+
+PATH=$PATH:~/.local/bin
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+source /usr/share/zsh/plugins/syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
