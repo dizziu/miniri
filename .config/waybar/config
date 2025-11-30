@@ -92,7 +92,7 @@
 	"status-icons": {
 		"paused": "⏸"
 	},
-	 "ignored-players": ["librewolf"]
+	 "ignored-players": ["firefox"]
 },
 
     "bluetooth": {

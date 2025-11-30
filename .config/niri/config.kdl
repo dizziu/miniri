@@ -113,6 +113,7 @@ overview {
        spawn-at-startup "mako"
        spawn-at-startup "waybar"
        spawn-at-startup "foot" "--server"
+       spawn-at-startup "swayidle" "-w" "before-sleep" "hyprlock"
 
       prefer-no-csd
 
@@ -129,13 +130,13 @@ overview {
       }
 
       window-rule {
-        match app-id="legcord"
+        match app-id="obsidian"
         open-maximized true
         open-on-workspace "3"
       }
 
       window-rule {
-        match app-id="tauonmb"
+        match app-id="legcord"
         open-maximized true
         open-on-workspace "4"
       }
@@ -154,6 +155,7 @@ overview {
           Mod+N { spawn "nemo"; }
     	 Mod+A { spawn "fuzzel"; }
     	 Mod+S { spawn "tauon"; }
+    	 Mod+X { spawn "obsidian"; }
     	 Mod+D { spawn "legcord"; }
 
           XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
