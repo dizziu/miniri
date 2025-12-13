@@ -124,7 +124,7 @@ overview {
 
 
       window-rule {
-        match app-id="librewolf"
+        match app-id="helium"
         open-maximized true
         open-on-workspace "2"
       }
@@ -151,7 +151,7 @@ overview {
           Mod+Return { spawn "footclient"; }
     	 Mod+W { spawn "bash" "-c" "pqiv ~/Pictures/Wallpapers/*"; }
           Mod+Z { spawn "zeditor"; }
-          Mod+B { spawn "librewolf"; }
+          Mod+B { spawn "helium-browser"; }
           Mod+N { spawn "nemo"; }
     	 Mod+A { spawn "fuzzel"; }
     	 Mod+S { spawn "tauon"; }
@@ -163,6 +163,8 @@ overview {
           XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
           XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
           XF86AudioPlay   allow-when-locked=true { spawn "playerctl" "play-pause"; }
+          XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "set" "+5%"; }
+          XF86MonBrightnessDown  allow-when-locked=true { spawn "brightnessctl" "set" "5%-"; }
 
           Mod+Q { close-window; }
 
