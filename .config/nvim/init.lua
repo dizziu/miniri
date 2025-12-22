@@ -271,6 +271,24 @@ require('lazy').setup({
   -- options to `gitsigns.nvim`.
   --
   -- See `:help gitsigns` to understand what the configuration keys do
+  {
+    'lervag/vimtex',
+    ft = { 'tex' },
+    init = function()
+      -- Use lualatex
+      vim.g.vimtex_compiler_method = 'latexmk'
+      vim.g.vimtex_compiler_latexmk_engines = { ['_'] = '-lualatex' }
+      -- PDF viewer
+      vim.g.vimtex_view_method = 'zathura'
+
+      -- Disable vimtex mappings if you want full control
+      vim.g.vimtex_mappings_enabled = 1
+
+      -- Quickfix on errors
+      vim.g.vimtex_quickfix_mode = 1
+    end,
+  },
+
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
@@ -282,6 +300,11 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
     },
+  },
+
+  {
+    'windwp/nvim-ts-autotag',
+    opts = {},
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
@@ -676,6 +699,23 @@ require('lazy').setup({
         -- pyright = {},
         tinymist = {},
         rust_analyzer = {},
+        cssls = {},
+        html = {},
+        texlab = {
+          settings = {
+            texlab = {
+              build = {
+                executable = 'latexmk',
+                args = { '-lualatex', '-interaction=nonstopmode', '-synctex=1', '%f' },
+                onSave = true,
+              },
+              forwardSearch = {
+                executable = 'zathura',
+                args = { '--synctex-forward', '%l:1:%f', '%p' },
+              },
+            },
+          },
+        },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -773,6 +813,8 @@ require('lazy').setup({
         c = { 'clang-format' },
         rust = { 'rustfmt' },
         typst = { 'typstyle' },
+        html = { 'prettier' },
+        css = { 'prettier' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
