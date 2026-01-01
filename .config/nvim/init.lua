@@ -277,6 +277,9 @@ require('lazy').setup({
     init = function()
       -- Use lualatex
       vim.g.vimtex_compiler_method = 'latexmk'
+      vim.g.vimtex_compiler_method = 'latexmk'
+      vim.g.vimtex_format_enabled = 1
+      vim.g.vimtex_indent_enabled = 1
       vim.g.vimtex_compiler_latexmk_engines = { ['_'] = '-lualatex' }
       -- PDF viewer
       vim.g.vimtex_view_method = 'zathura'

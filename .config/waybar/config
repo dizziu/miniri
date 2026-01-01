@@ -92,7 +92,7 @@
 	"status-icons": {
 		"paused": "⏸"
 	},
-	 "ignored-players": ["firefox"]
+	 "ignored-players": ["chromium"]
 },
 
     "bluetooth": {
